@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Effects</title>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="css/init.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/effects.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<img src="img/plogo.png"/>
+			</div>
+			CSS Effects
+		</div>
+		<div class="hint">所有特效均没加适配所有浏览器的前缀，尽在chrome下测试通过！</div>
+		<div class="displayArea">
+			<ul>
+				<li>
+					<div class="effectWrapper">
+						<div class="container">
+							<div id="nav-toggle"><span></span></div>
+						</div>
+					</div>
+					<div class="tooltips">汉堡包，点我变形</div>
+				</li>
+				<li>
+					<div class="effectWrapper">
+						<div id='facebook' >
+				             <div id='block_1' class='facebook_block'></div>
+				             <div id='block_2' class='facebook_block'></div>
+				             <div id='block_3' class='facebook_block'></div>
+					    </div>
+					</div>
+					<div class="tooltips">仿facebook加载</div>
+				</li>
+				<li>
+					<div class="effectWrapper">
+						<div class="main">
+							<div class="ball1"></div>
+							<div class="ball2"></div>
+							<div class="ball3"></div>
+						</div>
+					</div>
+					<div class="tooltips">省略号加载</div>
+				</li>
+				<li>
+					<div class="effectWrapper">
+						<div class="circle"></div>
+					</div>
+					<div class="tooltips">圆形轨道加载</div>
+				</li>
+				<li>
+					<div class="effectWrapper">
+						<div class="main-bars">
+							<div class="line1"></div>
+							<div class="line2"></div>
+							<div class="line3"></div>
+						</div>
+					</div>
+					<div class="tooltips">三竖线加载</div>
+				</li>
+				<li>
+					<div class="effectWrapper">
+						<div class="main-Circle">
+							<div class="big"></div>
+							<div class="small"></div>
+						</div>
+					</div>
+					<div class="tooltips">雷达加载</div>
+				</li>
+			</ul>
+		</div>
+		
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".container").click(function(){
+					$("#nav-toggle").toggleClass("active");
+				});
+			});
+		</script>
+	</body>
+</html>
